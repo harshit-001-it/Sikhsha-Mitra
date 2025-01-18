@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siksha Mitra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginpage.html">
+</head>
+<body>
+    <header>
+        <h1><div class="logo">Siksha Mitra</div></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Empowering Education, Together</h1>
+            <button class="cta cta-join-now" id="joinBtn" onclick="handleJoinNow()">Join Now</button>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+    <script>
+        function handleJoinNow() {
+            window.location.href = "loginpage.html";
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const joinNowBtn = document.querySelector(".cta-join-now");
+            if (joinNowBtn) {
+                joinNowBtn.addEventListener("click", handleJoinNow);
+            }
+        });
+    </script>
+    
+
+    <section id="about" class="about">
+        <h2>About Siksha Mitra</h2>
+        <p>We aim to connect students with resources, seniors, and professors to improve the quality of education across the world.</p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Quality Notes</h3>
+                <p>Access high-quality academic notes and materials shared by professors and students.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Expert Guidance</h3>
+                <p>Get one-on-one mentorship from professors and experts in your field of study.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Collaborative Learning</h3>
+                <p>Join study groups, attend webinars, and collaborate with peers on projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Our Image Gallery</h2>
+        <div class="image-grid">
+            <img src="https://via.placeholder.com/300x200" alt="Gallery Image 1">
+            <img src="https://via.placeholder.com/300x200" alt="Gallery Image 2">
+            <img src="https://via.placeholder.com/300x200" alt="Gallery Image 3">
+            <img src="https://via.placeholder.com/300x200" alt="Gallery Image 4">
+        </div>
+    </section>
+
+    <section id="community" class="community">
+        <h2>Join Our Community</h2>
+        <p>Become a part of a dynamic learning environment. Connect with others, ask questions, and share knowledge.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder=" Name" id="name" required>
+            <input type="email" placeholder=" Email / Mobile Number" id="email" required>
+            <textarea placeholder=" Your Message" id="message" required oninput="adjustHeight(this)"></textarea>
+            <button type="submit" id="submitBtn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Siksha Mitra. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

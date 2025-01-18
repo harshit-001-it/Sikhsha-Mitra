@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Button Interface</title>
+    <link rel="stylesheet" href="afterloginpage.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>choose one of the options</h1>
+    <br>
+    <div class="btn-container">
+        <button class="btn" onclick="showOptions('notes')">Notes</button>
+        <button class="btn" onclick="showOptions('pyqs')">PYQs</button>
+        <button class="btn" onclick="showOptions('group')">Group</button>
+    </div>
+
+    <div class="options-container" id="notes-options">
+        <button class="option-btn" onclick="showYear('1')">1st Year</button>
+        <button class="option-btn" onclick="showYear('2')">2nd Year</button>
+        <button class="option-btn" onclick="showYear('3')">3rd Year</button>
+    </div>
+
+    <div class="options-container" id="pyqs-options">
+        <button class="option-btn" onclick="showYear('1')">1st Year</button>
+        <button class="option-btn" onclick="showYear('2')">2nd Year</button>
+        <button class="option-btn" onclick="showYear('3')">3rd Year</button>
+    </div>
+
+    <div class="options-container" id="group-options">
+        <button class="option-btn2" onclick="showYear('1')">1st Year</button>
+        <button class="option-btn2" onclick="showYear('2')">2nd Year</button>
+        <button class="option-btn2" onclick="showYear('3')">3rd Year</button>
+    </div>
+
+</div>
+
+<script src="afterloginpage.js"></script>
+
+</body>
+</html>

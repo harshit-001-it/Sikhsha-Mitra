@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    perspective: 1000px; /* Enables the 3D effect */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-box {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 50px;
+    box-shadow: 0 40px 30px rgba(0, 0, 0, 0.3);
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.signup-box:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+    animation: float 5s infinite ease-in-out;
+}
+
+.box-wrapper {
+    padding: 30px;
+    text-align: center;
+}
+
+.signup-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #7c6a6a;
+    border-radius: 50px;
+    outline: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.input-box input:focus {
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.button-container button {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.button-container button:hover {
+    transform: translateY(-2px) scale(1.05);
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    box-shadow: 10 50px 40px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    margin-top: 15px;
+}
+
+.text a {
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+/* 3D Animation */
+.signup-box:hover {
+    transform: rotateY(-5deg) rotateX(5deg) scale(1.05);
+    transition: transform 0.4s ease-in-out;
+}

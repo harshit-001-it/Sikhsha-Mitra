@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #fc790e;
+}
+
+/* Main Buttons */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+
+/* Option Buttons Container */
+.options-container {
+    display: none;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* Option Buttons */
+.option-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #91830d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+
+
+}
+
+.option-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color:#9009ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.option-btn2 {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color:#53ff09;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.option-btn:active {
+    transform: scale(1);
+}
+
+/* Show active options */
+.active {
+    display: block;
+}

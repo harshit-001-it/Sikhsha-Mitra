@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siksha Mitra</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="loginpage.html">
+    <link rel="stylesheet" href="front.html">
+</head>
+<body>
+    <header>
+        <div class="logo">Siksha Mitra</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Feature<li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Empowering Education, Together</h1>
+            <p>This is a website which provides engineering notes year wise.</p>
+            <br>
+            <p>Join to access the features</p>
+            <br>
+            <button class="cta cta-join-now" id="joinBtn" onclick="handleJoinNow()">Join Now</button>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Siksha Mitra</h2>
+        <p>We aim to connect students with resources, seniors, and professors to improve the quality of education across the world.</p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <br>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Quality Notes</h3>
+                <p>Access high-quality academic notes and materials shared by professors and students.</p>
+            </div>
+           
+            <div class="feature-card">
+                <h3>Collaborative Learning</h3>
+                <p>Join study groups, attend webinars, and collaborate with peers on projects.</p>
+            </div>
+        </div>
+    
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your Email" id="email" required>
+            <textarea placeholder="Your Message" id="message" required></textarea>
+            <button type="submit" id="submitBtn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Siksha Mitra. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+        
+    <script src="mainpage.js"></script>
+</body>
+</html>

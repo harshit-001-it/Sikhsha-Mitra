@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #05d9f1;
+    color: rgb(21, 240, 14);
+}
+
+.logo {    
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    
+    font-style: oblique;
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #05d9f1;
+}
+nav ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+}
+
+nav ul li a {
+    color: rgb(250, 128, 7);
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #e0f7fa;
+}
+
+.cta {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .features, .resources, .community {
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004aad;
+    color: white;
+}
